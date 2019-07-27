@@ -1,15 +1,14 @@
 //cargar el service worker
 
-if ("serviceWorker" in navigator) {
-    console.log("Puedes usar los service worker")
-    navigator.serviceWorker.register('js/sw.js')
-    .then(res => console.log('service worker cargado correctamente' , res))
-    .catch(err => console.log('Service worker no se a podido registrar' , err))
-
-} else {
-    console.error("no puedes")
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function () {
+      navigator.serviceWorker.register('sw.js').then(function (registration) {
+          console.log('Service worker successfully registered on scope', registration.scope);
+      }).catch(function (error) {
+          console.log('Service worker failed to register');
+      });
+  });
 }
-
 
 //Scroll suavisado
 $(function (){

@@ -1,14 +1,13 @@
 {
 
-    "name" : "PWA - EDER ALEXIS WEB",
-    "short_name" : "ALEX <CODE>",
+    "name" : "Eder WEB",
+    "short_name" : "Eder WEB",
     "description" : "Aplicación PWA para informacion personal.",
     "background_color" : "#FFF",
     "theme_color" : "#FB314E" ,
     "orientation" : "portrait",
     "display" : "standalone",
-    "start_url" : "index.html?utm_source=homescreen",
-    "scope" : "/",
+    "start_url" : "./index.html?utm_source=homescreen",
     "icons" : [
         {
             "src" : "img/favicon-1024.png",

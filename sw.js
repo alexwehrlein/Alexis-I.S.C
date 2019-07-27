@@ -5,7 +5,7 @@ const CACHE_NAME = 'v1_cache_alexis_pwa';
 // Ficheros a cachear en la aplicación
 
 var urlToCache = [
-    '/',
+    
     'css/styles.css',
     'img/favicon.png',
     'img/1.png',
